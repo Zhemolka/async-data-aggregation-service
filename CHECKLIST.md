@@ -1,0 +1,29 @@
+# Checklist соответствия тестовому заданию
+
+- [x] Python 3.10+
+- [x] FastAPI
+- [x] PostgreSQL
+- [x] SQLAlchemy 2.0 async + asyncpg
+- [x] Celery + Redis broker/result backend
+- [x] Docker + Docker Compose
+- [x] `POST /api/v1/tasks` с `202 Accepted`
+- [x] Валидация непустого списка URL
+- [x] Создание `pending` записи в БД
+- [x] Регистрация задачи в Celery
+- [x] `GET /api/v1/tasks/{task_id}`
+- [x] Статусы pending / processing / completed / failed
+- [x] `GET /api/v1/analytics`
+- [x] Аналитика только по completed-задачам
+- [x] Имитация сетевой задержки 2 секунды на URL
+- [x] URL с `error` завершает всю задачу как failed
+- [x] Сохранение текста ошибки
+- [x] Случайная метрика 10..100
+- [x] Контейнеры app / worker / redis / db
+- [x] Настройки через `.env` + `.env.example`
+- [x] Требуемые модули `/api`, `/core`, `/models`, `/tasks`
+- [x] Alembic и автоматический `upgrade head`
+- [x] Type hints
+- [x] Ruff / PEP 8 контроль
+- [x] Unit tests
+- [x] Подробный README
+- [x] Design decisions
